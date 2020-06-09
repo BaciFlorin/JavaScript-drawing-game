@@ -1,0 +1,48 @@
+<%- contentFor('titlu') %>
+Cameră de așteptare
+
+<%- contentFor('continutHeader') %>
+Se așteaptă începerea jocului
+
+<%- contentFor('continutCSSSpecific') %>
+<link rel="stylesheet" href="/css/waitingRoom.css">
+
+<%- contentFor('continutPrincipal') %>
+<div class="table-container">
+    <div class="table-row">
+        <div id="waitingRoomParticipants">
+            <h1>Participanți</h1>
+            <ol id="participanti">
+                <% for(var p in participants) { %>
+                <li>
+                    <div id="profileP"><img src="/images/batman.png" alt="BatmanProfile"></div>
+                    <div id="numeP"><%=participants[p]%></div>
+                </li>
+                <% } %>
+            </ol>
+
+            <h1>Codul camerei</h1>
+            <div id="roomCode"><%= roomCode %></div>
+
+            <div id="incepeJocul">
+                <% if(creator == true) { %>
+                <button onclick="startGame()">Incepe jocul</button>
+                <% } %>
+            </div>
+            <button onclick="disconnect()">Deconecteaza-te!</button>
+
+            <% if(mesajEroare != undefined) { %>
+            <h3><%= mesajEroare %></h3>
+            <% } %>
+        </div>
+
+        <div id="waitingRoomChat">
+            <h1>Chat:</h1>
+
+            <div class="zonaChat">
+                <ul class="mesaje"></ul>
+            </div>
+            <input id="inputMesaj" placeholder="Scrie..." />  <div id="charactersLeft">0/50</div>
+        </div>
+    </div>
+</div>

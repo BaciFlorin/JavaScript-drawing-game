@@ -1,0 +1,345 @@
+/* game room */
+
+#gameArea{
+    display: inline-block;
+    width: 100%;
+}
+
+#flex-cont {
+    display: flex;
+}
+
+#participantsGame-container {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+#participanti.gameRoomParticipants {
+    display: flex;
+    background-color: #ff6a5c;
+    border-radius: 10px;
+    height: auto;
+    list-style-type: none;
+    overflow: scroll;
+}
+
+#participanti.gameRoomParticipants li {
+    flex: 1 1 auto;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+#participanti.gameRoomParticipants li .numeParticipant , #participanti.gameRoomParticipants li .score {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+} 
+
+.score .scorParticipant {
+    display: inline;
+}
+
+#gameRoomInfo{
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#gameRoomInfo *
+{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+#cuvinte {
+    width: 100%;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+#prompt{
+    background-color: cadetblue;
+    border-radius: 20px;
+    display: table-cell;
+    width: 50%;
+    padding: 20px;
+}
+
+#round{
+    padding: 20px;
+    background-color: cadetblue;
+    display: table-cell;
+    width: 20%;
+    border-radius: 20px;
+}
+
+#timer {
+    padding: 20px;
+    background-color: cadetblue;
+    display: table-cell;
+    font-weight: bolder;
+    width: 20%;
+    border-radius: 20px;
+}
+
+/*  chestionar alegere cuvinte */
+
+#chestionar{
+    padding: 0 25%;
+    list-style: none;
+}
+
+.varianta
+{
+    display: block;
+}
+
+.varianta-content
+{
+    display: inline-block;
+    width: 24%;
+    font-size: 20px;
+    text-align: center;
+}
+
+  .varianta input[type="radio"]{
+    opacity: 0;
+    position: fixed;
+    width: 0;
+    border: 2px solid #444;
+  }
+
+  .varianta label {
+      display: inline-block;
+      background-color: #ddd;
+      padding: 10px 20px;
+      font-family: sans-serif, Arial;
+      font-size: 16px;
+      border-radius: 4px;
+      color: black;
+  }
+  
+  .varianta label:hover {
+    background-color: #dfd;
+  }
+  
+  .varianta input[type="radio"]:checked + label {
+      background-color: #ff6a5c;
+}
+
+
+#chestionar button
+{
+    background-color: #ccdfcb;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#chestionar button:hover
+{
+    transition: all 500ms ease-out;
+    background-color: #ff6a5c;
+    color: black;
+}
+
+
+
+#zonaChatGameRoom{
+    width: 30%;
+    flex: 1 1 auto;
+    border-radius: 20px;
+}
+
+.zonaChat {
+    background-color: #ccdfcb;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.mesaje {
+    overflow: scroll;
+    height: 500px;
+    padding: 10px;
+    color: black;
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.mesaje li {
+    display: block;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.wordFind {
+    background-color: darkgreen;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.infoMessage{
+    width: 100%;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.userNameChat{
+    font-size: 20px;
+    display: inline;
+    vertical-align: middle;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.userMessageChat{
+    display: inline;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 30px;
+    overflow: hidden;
+}
+
+/* Input */
+
+#inputMesaj {
+    margin-top: 10px;
+    background-color: #ff6a5c;
+    display: inline-block;
+    border-radius: 10px;
+    width: 80%;
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    outline: none;
+    padding-left: 10px;
+    right: 0;
+    color: black;
+    font-size: 20px;
+}
+
+/* butoane */
+
+#disconnectButton, #clearButton{
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    width: 18%;
+    background-color: #ccdfcb;
+    color: black;
+}
+
+#disconnectButton:hover, #clearButton:hover {
+    background-color: #ff6a5c;
+    color: white;
+}
+
+
+/* Desenare */
+
+#drawGameRoom
+{
+    flex: 1 1 auto;
+    padding: 15px;
+    width: 68%;
+    background-color: #ccdfcb;
+    border-radius: 20px;
+    color: black;
+    margin: 10px;
+}
+
+.whiteboard {
+    height: 530px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.colors {
+    display: inline-block;
+    width: 80%;
+    margin-left: 14px;
+}
+
+.color {
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+}
+
+.color.black {
+    background-color: black;
+}
+
+.color.red {
+    background-color: red;
+}
+
+.color.green {
+    background-color: green;
+}
+
+.color.blue {
+    background-color: blue;
+}
+
+.color.yellow {
+    background-color: yellow;
+}
+
+
+.pencilDimensions {
+    display: inline-block;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.dimension {
+    display: inline-block;
+    margin: 5px;
+    height: 48px;
+    width: 70px;
+}
+
+.eraser {
+    display: inline-block;
+    margin: 5px;
+    height: 48px;
+    width: 54px;
+}
+
+#toolBorder {
+    border: 3px dotted darkgrey;
+}
+
+

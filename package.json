@@ -1,0 +1,26 @@
+{
+  "name": "temacasapw",
+  "version": "1.0.0",
+  "description": "Tema de casa de la Programare web, care implementeaza un joc asemanator cu skribbl.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HDR-Organization/tema-de-casa-BaciFlorin.git"
+  },
+  "author": "Bacica Florin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HDR-Organization/tema-de-casa-BaciFlorin/issues"
+  },
+  "homepage": "https://github.com/HDR-Organization/tema-de-casa-BaciFlorin#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0"
+  },
+  "devDependencies": {}
+}

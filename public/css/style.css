@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background-image: url("../images/backgroundImage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+header {
+    height: 7%;
+    width: 100%;
+    padding: 10px 25%;
+}
+
+main {
+    width: 100%;
+    padding: 20px 10%;
+}
+
+footer {
+    height: 50px;
+    background-color: #ccdfcb;
+    color: black;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+
+/* header pagina */
+
+#header-container {
+    background-color: #ccdfcb;
+    color: black;
+    border-radius: 10px;
+    padding: 16px;
+    display: table;
+}
+
+#header-container * {
+    display: table-cell;
+}
+
+#header-container img {
+    height: 60px;
+}
+
+#header-container p {
+    width: 90%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* main */
+
+#main-container {
+    min-height: calc(100vh - 160px - 50px);
+    background-color: teal;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.table-container {
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.table-row {
+    display: table-row;
+}

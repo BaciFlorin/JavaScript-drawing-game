@@ -1,0 +1,158 @@
+/* Camera de asteptare */
+
+#waitingRoomParticipants {
+    background-color: #ff6a5c;
+    border-radius: 10px;
+    color: white;
+    display: table-cell;
+    width: 50%;
+    padding: 20px;
+}
+
+#participanti {
+    margin-left: 20px;
+    list-style-type: none;
+    overflow: scroll;
+    height: 400px;
+}
+
+#participanti li {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+#roomCode {
+    font-weight: bold;
+    color: black;
+    font-size: 40px;
+}
+
+#profileP {
+    display: table-cell;
+    width: 10%;
+}
+
+#profileP img {
+    width: 100%;
+}
+
+#numeP {
+    display: table-cell;
+    width: 70%;
+    vertical-align: middle;
+}
+
+#waitingRoomParticipants button {
+    width: 80%;
+    background-color: teal;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-block;
+}
+
+#waitingRoomParticipants button:hover {
+    background-color: #ccdfcb;
+    color: black;
+}
+
+#waitingRoomChat {
+    padding: 20px;
+    border-radius: 10px;
+    display: table-cell;
+    background-color: #ff6a5c;
+    width: 46%;
+    margin-left: 20px;
+}
+
+
+/* Chat */
+
+.zonaChat {
+    height: 550px;
+    padding-bottom: 60px;
+    background-color: #ccdfcb;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.mesaje {
+    height: 530px;
+    margin: 0;
+    overflow: scroll;
+    padding: 10px;
+    color: black;
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.mesaje li {
+    display: block;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.wordFind {
+    background-color: darkgreen;
+    color: white;
+    width: 100%;
+    display: inline-block;
+}
+
+.infoMessage{
+    width: 100%;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.userNameChat{
+    font-size: 20px;
+    display: inline;
+    vertical-align: middle;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.userMessageChat{
+    display: inline;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 30px;
+    overflow: hidden;
+}
+
+/* Input */
+
+#inputMesaj {
+    margin-top: 10px;
+    background-color: teal;
+    display: inline-block;
+    border-radius: 10px;
+    width: 80%;
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    outline: none;
+    padding-left: 10px;
+    right: 0;
+    color: white;
+    font-size: 20px;
+}

@@ -1,0 +1,100 @@
+<%- contentFor('titlu') %>
+Pagină principală
+
+<%- contentFor('continutHeader') %>
+Joc de desenat interactiv
+
+<%- contentFor('continutCSSSpecific') %>
+<link rel="stylesheet" href="/css/index.css">
+
+<%- contentFor('continutPrincipal') %>
+<div class="table-container">
+    <div class="table-row">
+        <div id="participate-form">
+            <label for="nume">Nume:</label>
+            <input type="text" name="nume" id="nume">
+            <label for="idJoc">ID joc:</label>
+            <input type="text" name="idJoc" id="idJoc">
+            <button onclick="createGame()">Crează joc</button>
+            <button onclick="joinGame()">Participă joc</button>
+
+            <div id="userError">
+                <% if(mesajEroare != undefined) { %>
+                <%= mesajEroare %>
+                <% } %>
+            </div>
+
+        </div>
+
+        <div id="help-container">
+            <h1>Ajutor:</h1>
+            <h3>Pentru a cea un joc va trebui să:</h3>
+            <ul class="help-list">
+                <li class="help">Introduci un nume cu care vrei să joci. Trebuie să aibă între 5 și 20 de caractere și să conțină doar litere!;</li>
+                <li class="help">Apeși pe butonul "Crează joc" sau apeși Enter;</li>
+            </ul>
+
+            <p>
+                După ce faci pași de mai sus vei fi redirectat către pagina de așteptare a jocului unde vei găsi
+                codul camerei, pe care îl poți de prietenilor pentru a participa și ei la același joc.
+            </p>
+
+            <h3>Pentru a participa la un joc va trebui să faci următoarele:</h3>
+            <ul class="help-list">
+                <li class="help">Introduci numele cu care vrei să joci;</li>
+                <li class="help">Introduci codul de 9 caractere care identifică camera de joacă;</li>
+                <li class="help">Apeși pe butonul "Participă joc" sau apeși Enter;</li>
+            </ul>
+            <p>
+                Dacă ai introdus totul corect vei fi redirectat către pagina de așteptare.
+            </p>
+            <p><b>Atenție!</b> Numărul maxim de jucători este de 6.</p>
+        </div>
+    </div>
+</div>
+
+<div id="rules-container">
+    <div class="table-container">
+        <div class="table-row">
+            <div id="rules-content">
+                <h1>Descriere:</h1>
+                <p>Acest joc este potrivit pentru orice grup de prieteni care vor să își petreacă o seară împreună
+                    distrându-se,
+                    punându-și în același timp și
+                    mintea la încercare. Idea principală a jocului este simplă, cineva desenează iar ceilalți trebuie să
+                    ghicească cuvântul pe care jucătorul
+                    curent îl desenează.
+                </p>
+                <h1>Regulile jocului:</h1>
+                <ol class="rules-list">
+                    <li>Jocul are 3 runde;</li>
+                    <li>O rundă este terminată după ce fiecare jucător a ales un cuvânt și l-a desenat;</li>
+                    <li>La începutul fiecărei ture, jucătorul va trebui să aleagă în 15 secunde un cuvânt dintre cele 3
+                        de pe
+                        ecran;</li>
+                    <li>Ceilalți jucători pot vedea doar numărul de litere din cuvânt și sunt nevoiți să îl ghicească pe
+                        baza
+                        desenului de pe ecran;</li>
+                    <li>Jucătorul are timp 60 de secunde să deseneze, iar ceilalți să ghicească;</li>
+                    <li>Fieacare are la dispoziție chat-ul în care pot scrie cuvinte. Iar când aceștia îl ghicesc vor fi
+                        anunțați;</li>
+                    <li>La final fiecare primește un punctaj care se adună la scorul său;</li>
+                    <li>Câștigatorul este acela cu cel mai mare punctaj la finalul celor 3 runde.</li>
+                </ol>
+
+                <h3>Atenție:</h3>
+                <p>Nu se poate începe un joc dacă există doar o persoană în cameră!</p>
+                <p>Dacă cineva iese din joc va fi scos din listă și nu se va mai putea reîntoarce în aceeași cameră!</p>
+                <p>Dacă în timpul jocului în cameră rămâne doar un singur jucător, el este declarat câștigator și jocul
+                    se
+                    termină!</p>
+            </div>
+            <div id="presentation-video">
+                <h2>Jocul de la care m-am inspirat pentru proiect:</h2>
+                <iframe src="https://www.youtube.com/embed/BwUXIWmEsSw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
